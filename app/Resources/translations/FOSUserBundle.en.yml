@@ -1,0 +1,11 @@
+registration:
+    submit: Register Yalla
+    page_title: Register New Account
+    form_title: Register
+    confirmed: Congratulations %username%, your account is now activated.
+
+profile:
+    profile: Profile
+
+login:
+    page_title: Login

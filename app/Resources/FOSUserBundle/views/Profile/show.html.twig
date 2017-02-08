@@ -1,0 +1,11 @@
+{% extends "base.html.twig" %}
+
+{% trans_default_domain 'FOSUserBundle' %}
+
+{% block title %}{{ user.username }}{{ '\'s ' }}{{ 'profile.profile'|trans }}{% endblock title %}
+
+{% block body %}
+    <div class="col-md-8 col-md-offset-2">
+    {% include "FOSUserBundle:Profile:show_content.html.twig" %}
+    </div>
+{% endblock body %}
