@@ -35,7 +35,7 @@ class NoteController extends Controller
     /**
      * Creates a new note entity.
      *
-     * @Route("/new", name="note_new")
+     * @Route("/new/", name="note_new")
      * @Method({"GET", "POST"})
      */
     public function newAction(Request $request)
@@ -61,7 +61,7 @@ class NoteController extends Controller
     /**
      * Finds and displays a note entity.
      *
-     * @Route("/{id}", name="note_show")
+     * @Route("/show/{id}/", name="note_show")
      * @Method("GET")
      */
     public function showAction(Note $note)
