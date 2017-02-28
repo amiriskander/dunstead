@@ -45,6 +45,10 @@ class NoteController extends Controller
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
+
+            $note->setUserId(0);
+            $note->setCreated( new \DateTime() );
+
             $em = $this->getDoctrine()->getManager();
             $em->persist($note);
             $em->flush($note);
@@ -94,7 +98,7 @@ class NoteController extends Controller
 
         return $this->render('note/edit.html.twig', array(
             'note' => $note,
-            'edit_form' => $editForm->createView(),
+            'form' => $editForm->createView(),
             'delete_form' => $deleteForm->createView(),
         ));
     }
