@@ -37,6 +37,11 @@ framework:
 twig:
     debug:            "%kernel.debug%"
     strict_variables: "%kernel.debug%"
+    # Variables used globally in twig templates
+    globals:
+        app_name: Dunstead
+        app_author: Amir Iskander
+        app_author_email: amir@amiriskander.com
 
 # Doctrine Configuration
 doctrine:
