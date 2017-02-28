@@ -1,0 +1,12 @@
+general:
+    id: ID
+    title: Title
+    name: Name
+    description: Description
+    actions: Actions
+    created: Created
+    userId: User ID
+    show: Show
+    edit: Edit
+    delete: Delete
+    cancel: Cancel

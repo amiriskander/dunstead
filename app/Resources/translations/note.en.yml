@@ -1,0 +1,7 @@
+note:
+    notes: Notes
+    title: Title
+    description: Description
+    createNewBtn: Create a new note
+    addNewPage: Add New Note
+    editPage: Edit Note: %note%
