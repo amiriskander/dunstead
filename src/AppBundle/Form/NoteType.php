@@ -13,7 +13,11 @@ class NoteType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('title')->add('description')->add('userId')->add('created')        ;
+        $builder
+            ->add('title', null, ['label_attr'=>['class'=>'bmd-label-floating'],'attr'=>['class'=>'form-control']])
+            ->add('description', null, ['label_attr'=>['class'=>'bmd-label-floating'],'attr'=>['class'=>'form-control']]);
+            /*->add('userId')
+            ->add('created');*/
     }
     
     /**
