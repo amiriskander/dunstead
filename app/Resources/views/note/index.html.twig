@@ -15,7 +15,6 @@
                         <th>{{ 'general.id'|trans({},'general') }}</th>
                         <th>{{ 'general.title'|trans({},'general') }}</th>
                         <th>{{ 'general.description'|trans({},'general') }}</th>
-                        <th>{{ 'general.userId'|trans({},'general') }}</th>
                         <th>{{ 'general.created'|trans({},'general') }}</th>
                         <th>{{ 'general.actions'|trans({},'general') }}</th>
                     </tr>
@@ -26,7 +25,6 @@
                         <td><a href="{{ path('note_show', { 'id': note.id }) }}">{{ note.id }}</a></td>
                         <td>{{ note.title }}</td>
                         <td>{{ note.description }}</td>
-                        <td>{{ note.userId }}</td>
                         <td>{% if note.created %}{{ note.created|date('Y-m-d H:i:s') }}{% endif %}</td>
                         <td>
                             <a href="{{ path('note_show', { 'id': note.id }) }}">{{ 'general.show'|trans({},'general') }}</a>
