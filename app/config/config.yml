@@ -42,6 +42,7 @@ twig:
         app_name: Dunstead
         app_author: Amir Iskander
         app_author_email: amir@amiriskander.com
+        one_signal_app_key: 36f24ffe-6e7b-4c82-9011-96ba12197bfb
 
 # Doctrine Configuration
 doctrine:
